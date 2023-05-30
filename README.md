@@ -3,4 +3,4 @@ WPF desktop application made using model–view–viewmodel architectural patter
 ![image](https://github.com/igornieb/quiz/assets/66256669/e21fbf74-2f22-4b5f-a473-a8b1b3e3d22e)
 
 ## TODO
-quiz solving
+quiz solving - curently you can only add quizes and questions
