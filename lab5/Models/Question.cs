@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace lab5.Models
@@ -19,7 +20,27 @@ namespace lab5.Models
 
         public override string ToString()
         {
-            return $"{Quest}";
+            return $"{decrypt(Quest, Id)}";
+        }
+
+        public static string encrypt(string s, long key)
+        {
+            string res = "";
+            foreach (char c in s)
+            {
+                res += (char)((int)c ^ key);
+            }
+            return res;
+        }
+
+        public static string decrypt(string s, long key)
+        {
+            string res = "";
+            foreach (char c in s)
+            {
+                res += (char)((int)c ^ key);
+            }
+            return res;
         }
     }
 }

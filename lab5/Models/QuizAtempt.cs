@@ -2,8 +2,8 @@
 {
     internal class QuizAtempt
     {
-        private long Id { get; set; }
-        private string PlayerName { get; set; }
-        private int Score { get; set; }
+        public long Id { get; set; }
+        public string PlayerName { get; set; }
+        public int Score { get; set; }
     }
 }
